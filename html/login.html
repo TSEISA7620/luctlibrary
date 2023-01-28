@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="shortcut icon" href="../image/luct_logo.png" type="image/x-icon">
+    <title>Form</title>
+</head>
+<body>
+     <!--header start-->
+ <header>
+    <nav id="menu">
+        <img src="../image/luct_logo.png" alt="">
+        <ul id="toggle_links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../html/publications.html">PUBLICATIONS</a></li>
+            <li><a href="../html/login.html">LOG IN</a></li>
+            <li class="btn"><a href="dashboard.html">DATABASES</a></li>
+            <button id="close-btn" onclick="menu_close()">
+            &times;
+        </button>
+        </ul>
+        <button id="toggle-btn" onclick="menu_pop()">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+        
+    </nav>
+</header>
+<!--header end-->
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="number" placeholder="Enter your student id" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" placeholder="Enter your student id" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Signup">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/forms.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

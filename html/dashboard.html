@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../image/luct_logo.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+<body>
+ <!--header start-->
+ <header>
+    <nav id="menu">
+        <img src="../image/luct_logo.png" alt="">
+        <ul id="toggle_links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../html/publications.html">PUBLICATIONS</a></li>
+            <li><a href="../html/login.html">LOG IN</a></li>
+            <li class="btn"><a href="dashboard.html">DATABASES</a></li>
+            <button id="close-btn" onclick="menu_close()">
+            &times;
+        </button>
+        </ul>
+        <button id="toggle-btn" onclick="menu_pop()">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+        
+    </nav>
+</header>
+<!--header end-->
+    <main>
+        <!--database page start-->
+        <section id="databases">
+            <div class="wrapp">
+                <div class="floating">
+                    <div class="cover">
+                        <h2>Open access databases</h2>
+                        <a href="../databases/osd.html" class="button">View</a>
+                    </div>
+                </div>
+
+                <div class="floating">
+                    <div class="cover">
+                    <h2>Open access databases(Books)</h2>
+                    <a href="../databases/books.html" class="button">View</a>
+                    </div>
+                </div>
+
+                <div class="floating">
+                    <div class="cover">
+                        <h2>Open access databases(Journal)</h2>
+                        <a href="../databases/journal.html" class="button">View</a>
+                    </div>
+                </div>
+
+                <div class="floating">
+                    <div class="cover">
+                        <h2>Others</h2>
+                        <a href="../databases/others.html" class="button">View</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--database page end-->
+    </main>
+        <!--javascripts ref ../js-->
+    <script src="../js/main.js"></script>
+</body>
+</html>
